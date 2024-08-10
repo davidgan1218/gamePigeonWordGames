@@ -22,5 +22,5 @@ To read the output, consider for example:
 
 The word starts at the position denoted by 1 and the subsequent letters are denoted by 2, 3, etc. The word itself is listed on top. 
 
-Note: Use at your own risk. I do not condone cheating. 
+Note: I don't condone cheating. 
 
