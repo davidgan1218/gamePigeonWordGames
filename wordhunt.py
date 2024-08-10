@@ -1,9 +1,9 @@
-from trie import Trie, TrieNode
+from dict.trie import Trie, TrieNode
 
 import copy
 
 trie = Trie()
-file_path = 'CollinsDict.txt'
+file_path = 'dict/CollinsDict.txt'
 
 with open(file_path, 'r') as file:
     for line in file:
