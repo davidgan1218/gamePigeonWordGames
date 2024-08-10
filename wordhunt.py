@@ -28,8 +28,6 @@ def dfs(i, j, seen, cur_word, path, words):
         return
     cur_word += board[i][j]
     path.append((i, j))
-
-    #if cur_word in trie, then add cur_word to words
     if trie.search(cur_word):
         copied_path = copy.deepcopy(path)
         words.append([cur_word, copied_path])
@@ -65,6 +63,7 @@ def print_word_on_board(sublist):
         print('|', end="")
         print()
 
+
 for i in range(4):
     for j in range(4):
         board[i][j] = input()
@@ -82,7 +81,6 @@ sorted_words = sorted(words, key=lambda x : len(x[0]), reverse=True)
 unique_words = []
 seen_words = set()
 get_unique_words(unique_words, sorted_words, seen_words)
-print()
 
 for i in range(15):
     print_word_on_board(unique_words[15-i])
